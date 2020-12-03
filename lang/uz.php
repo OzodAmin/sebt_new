@@ -1,0 +1,16 @@
+<?php $lang=[
+	'1'=>"RUAPBga kirish",
+	'2'=>"Sistemaga kirish ma'lumotlarini kiriting:",
+	'3'=>"Login",
+	'4'=>"Mahfiy so'z",
+	'5'=>"kirish",
+	'6'=>"Sistemada ro'yxatdan o'tish",
+	'7'=>"HKPda ro'yxatdan o'tish",
+	''=>"",
+	''=>"",
+	''=>"",
+	''=>"",
+	''=>"",
+	''=>"",
+	''=>"",
+];
