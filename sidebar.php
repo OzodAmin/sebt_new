@@ -55,6 +55,14 @@
 								<span class="menu-text">Login</span>
 							</a>
 						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/<?=$language;?>/register" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Register</span>
+							</a>
+						</li>
 					</ul>
 					<!--end::Menu Nav-->
 				</div>
