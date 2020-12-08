@@ -1,3 +1,4 @@
+<?= '<link href="assets/css/pages/login/classic/login-6.css" rel="stylesheet" type="text/css" />'; ?>
 <!--begin::Login-->
 <div class="login login-5 login-signin-on d-flex flex-row-fluid" id="kt_login">
 	<div class="d-flex flex-center bgi-size-cover bgi-no-repeat flex-row-fluid" style="background-image: url(/sebt/assets/media/bg/bg-2.jpg);">
@@ -35,4 +36,5 @@
 		</div>
 	</div>
 </div>
-<?php $script = '/sebt/assets/js/pages/custom/login/login-general.js'; ?>
+
+<?php $script = '<script src="/sebt/assets/js/pages/custom/login/login-general.js"></script>'; ?>

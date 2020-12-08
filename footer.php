@@ -1,5 +1,4 @@
-</div>
-			<!--end::Wrapper-->
+			</div>
 		</div>
 		<!--end::Page-->
 	</div>
@@ -20,7 +19,7 @@
 	<script src="/sebt/assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
 	<script src="/sebt/assets/js/scripts.bundle.js"></script>
 	<!--end::Global Theme Bundle-->
-	<script src="<?=$script;?>"></script>
+	<?=$script;?>
 </body>
 <!--end::Body-->
 </html>

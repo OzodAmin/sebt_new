@@ -30,7 +30,7 @@
 			<!--begin::Brand-->
 			<div class="brand flex-column-auto" id="kt_brand">
 				<!--begin::Logo-->
-				<a href="/" class="brand-logo">
+				<a href="/sebt" class="brand-logo">
 					<img alt="Logo" src="/sebt/assets/media/logos/logo-light.png" />
 				</a>
 				<!--end::Logo-->
@@ -47,12 +47,60 @@
 				<div id="kt_aside_menu" class="aside-menu my-4" data-menu-vertical="1" data-menu-scroll="1" data-menu-dropdown-timeout="500">
 					<!--begin::Menu Nav-->
 					<ul class="menu-nav">
+						<li class="menu-section">
+							<h4 class="menu-text">Login & Register</h4>
+							<i class="menu-icon ki ki-bold-more-hor icon-md"></i>
+						</li>
 						<li class="menu-item menu-item-active" aria-haspopup="true">
 							<a href="/sebt/<?=$language;?>/login" class="menu-link">
 								<span class="svg-icon menu-icon">
 									<i class="fas fa-align-justify"></i>
 								</span>
 								<span class="menu-text">Login</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/<?=$language;?>/register" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Register</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/<?=$language;?>/registerRKP" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Register RKP</span>
+							</a>
+						</li>
+						<li class="menu-section">
+							<h4 class="menu-text">Users, Roles, Permissions</h4>
+							<i class="menu-icon ki ki-bold-more-hor icon-md"></i>
+						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/<?=$language;?>/users" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Пользователи</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/<?=$language;?>/roles" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Роли</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/<?=$language;?>/permission" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Права доступа</span>
 							</a>
 						</li>
 					</ul>
