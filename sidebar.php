@@ -67,42 +67,6 @@
 								<span class="menu-text">Register</span>
 							</a>
 						</li>
-						<li class="menu-item menu-item-active" aria-haspopup="true">
-							<a href="/sebt/<?=$language;?>/registerRKP" class="menu-link">
-								<span class="svg-icon menu-icon">
-									<i class="fas fa-align-justify"></i>
-								</span>
-								<span class="menu-text">Register RKP</span>
-							</a>
-						</li>
-						<li class="menu-section">
-							<h4 class="menu-text">Users, Roles, Permissions</h4>
-							<i class="menu-icon ki ki-bold-more-hor icon-md"></i>
-						</li>
-						<li class="menu-item menu-item-active" aria-haspopup="true">
-							<a href="/sebt/<?=$language;?>/users" class="menu-link">
-								<span class="svg-icon menu-icon">
-									<i class="fas fa-align-justify"></i>
-								</span>
-								<span class="menu-text">Пользователи</span>
-							</a>
-						</li>
-						<li class="menu-item menu-item-active" aria-haspopup="true">
-							<a href="/sebt/<?=$language;?>/roles" class="menu-link">
-								<span class="svg-icon menu-icon">
-									<i class="fas fa-align-justify"></i>
-								</span>
-								<span class="menu-text">Роли</span>
-							</a>
-						</li>
-						<li class="menu-item menu-item-active" aria-haspopup="true">
-							<a href="/sebt/<?=$language;?>/permission" class="menu-link">
-								<span class="svg-icon menu-icon">
-									<i class="fas fa-align-justify"></i>
-								</span>
-								<span class="menu-text">Права доступа</span>
-							</a>
-						</li>
 					</ul>
 					<!--end::Menu Nav-->
 				</div>
