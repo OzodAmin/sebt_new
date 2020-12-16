@@ -15,7 +15,7 @@
 
 	if (file_exists("lang/".$URL[0].".php")) $language = $URL[0];
 
-	require_once "lang/".$language.".php";
+	require_once "lang/ru.php";
 	require_once 'header.php';
 	require_once 'sidebar.php';
 

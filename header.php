@@ -12,7 +12,6 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
-		<link rel="stylesheet" href="<?=$style;?>">
 		<!--begin::Global Theme Styles(used by all pages)-->
 		<link href="/sebt/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="/sebt/assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
@@ -23,8 +22,10 @@
 		<link href="/sebt/assets/css/themes/layout/header/menu/light.css" rel="stylesheet" type="text/css" />
 		<link href="/sebt/assets/css/themes/layout/brand/dark.css" rel="stylesheet" type="text/css" />
 		<link href="/sebt/assets/css/themes/layout/aside/dark.css" rel="stylesheet" type="text/css" />
+
+		<?= isset($style)?$style:'';?>
 		<!--end::Layout Themes-->
-		<link rel="shortcut icon" href="/sebt/assets/media/logos/favicon.ico" />
+		<!-- <link rel="shortcut icon" href="/sebt/assets/media/logos/favicon.ico" /> -->
 	</head>
 	<!--end::Head-->
 	<!--begin::Body-->

@@ -1,4 +1,9 @@
-<?= '<link href="/sebt/assets/css/pages/wizard/wizard-6.css" rel="stylesheet" type="text/css" />'; ?>
+<?php 
+$style = '<link href="/sebt/assets/css/pages/wizard/wizard-6.css" rel="stylesheet" type="text/css" />';
+require_once "../lang/ru.php";
+require_once '../header.php';
+require_once '../sidebar.php';
+?>
 	<!--begin::Content-->
 	<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
 		<!--begin::Entry-->
@@ -270,6 +275,16 @@
 													</div>
 												</div>
 												<div class="form-group row">
+													<label  class="col-6 col-form-label">Guvohnoma</label>
+													<div class="col-6">
+														<div class="custom-file">
+															<input type="file" class="custom-file-input" id="customFile">
+															<label class="custom-file-label" for="customFile"><i class="fas fa-paperclip"></i>&nbsp;<?=$lang['16'];?></label>
+														</div>
+														<span class="form-text text-muted">Прикрепите отсканированный документ</span>
+													</div>
+												</div>
+												<div class="form-group row">
 													<label  class="col-6 col-form-label">Приказ</label>
 													<div class="col-6">
 														<div class="custom-file">
@@ -356,3 +371,4 @@
 	<!--end::Content-->
 <?php $script = '<script src="/sebt/assets/js/pages/crud/forms/widgets/input-mask.js"></script>
 <script src="/sebt/assets/js/pages/custom/wizard/wizard-6.js"></script>'; ?>
+<?php require_once '../footer.php'; ?>

@@ -1,3 +1,8 @@
+<?php 
+require_once "../lang/ru.php";
+require_once '../header.php';
+require_once '../sidebar.php';
+?>
 <div class="container">
 	<!--begin::Card-->
 	<div class="card card-custom">
@@ -7,9 +12,9 @@
 				<h3 class="card-label">СПИСОК ПОЛЬЗОВАТЕЛЕЙ ЭСТБ</h3>
 			</div>
 			<div class="card-toolbar">
-				<button type="button" data-toggle="modal" data-target="#newUserModal" class="btn btn-primary font-weight-bolder">
+				<a href="/sebt/pages/users_new.php" class="btn btn-primary font-weight-bolder">
 					<i class="fas fa-plus"></i>НОВЫЙ ПОЛЬЗОВАТЕЛЬ
-				</button>
+				</a>
 			</div>
 		</div>
 		<!--end::Header-->
@@ -35,7 +40,7 @@
 				<td>Кучаров Бахтиёр Бойкобилович</td>
 				<td><span class="text-danger">Окончание срока действия</span></td>
 				<td>
-					<button type="button" data-toggle="modal" data-target="#newUserModal" class="btn btn-warning"><i class="fas fa-edit"></i></button>
+					<a href="/sebt/pages/users_new.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
 				</td>
 			</tr>
 			<tr>
@@ -149,7 +154,7 @@
 	</ul>
 </nav>
 <div class="modal" tabindex="-1" id="newUserModal">
-	<div class="modal-dialog">
+	<div class="modal-dialog modal-xl">
 		<div class="modal-content">
 			<div class="modal-header">
 				<h5 class="modal-title">НОВЫЙ ПОЛЬЗОВАТЕЛЬ</h5>
@@ -254,4 +259,39 @@
 	<!--end::Card-->
 </div>
 
-<?php $script='<script src="/sebt/assets/js/pages/custom/user/list-datatable.js"></script>'; ?>
+<?php $script='<script src="/sebt/assets/js/pages/crud/forms/widgets/bootstrap-datepicker.js"></script><script src="/sebt/assets/js/pages/custom/user/list-datatable.js"></script><script>
+var KTBootstrapDatepicker = function () {
+ var arrows;
+ if (KTUtil.isRTL()) {
+  arrows = {
+   leftArrow: \'<i class="la la-angle-right"></i>\',
+   rightArrow: \'<i class="la la-angle-left"></i>\'
+  }
+ } else {
+  arrows = {
+   leftArrow: \'<i class="la la-angle-left"></i>\',
+   rightArrow: \'<i class="la la-angle-right"></i>\'
+  }
+ }
+
+ var demos = function () {
+  // minimum setup for modal demo
+  $(\'#kt_datepicker_2_modal\').datepicker({
+   rtl: KTUtil.isRTL(),
+   todayHighlight: true,
+   orientation: "bottom left",
+   templates: arrows
+  });
+
+ return {
+  // public functions
+  init: function() {
+   demos();
+  }
+ };
+}();
+
+jQuery(document).ready(function() {
+ KTBootstrapDatepicker.init();
+});</script>'; ?>
+<?php require_once '../footer.php'; ?>

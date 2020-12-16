@@ -52,7 +52,7 @@
 							<i class="menu-icon ki ki-bold-more-hor icon-md"></i>
 						</li>
 						<li class="menu-item menu-item-active" aria-haspopup="true">
-							<a href="/sebt/<?=$language;?>/login" class="menu-link">
+							<a href="/sebt/pages/login.php" class="menu-link">
 								<span class="svg-icon menu-icon">
 									<i class="fas fa-align-justify"></i>
 								</span>
@@ -60,7 +60,7 @@
 							</a>
 						</li>
 						<li class="menu-item menu-item-active" aria-haspopup="true">
-							<a href="/sebt/<?=$language;?>/register" class="menu-link">
+							<a href="/sebt/pages/register.php" class="menu-link">
 								<span class="svg-icon menu-icon">
 									<i class="fas fa-align-justify"></i>
 								</span>
@@ -68,7 +68,7 @@
 							</a>
 						</li>
 						<li class="menu-item menu-item-active" aria-haspopup="true">
-							<a href="/sebt/<?=$language;?>/registerRKP" class="menu-link">
+							<a href="/sebt/pages/registerRKP.php" class="menu-link">
 								<span class="svg-icon menu-icon">
 									<i class="fas fa-align-justify"></i>
 								</span>
@@ -76,11 +76,19 @@
 							</a>
 						</li>
 						<li class="menu-section">
-							<h4 class="menu-text">Users, Roles, Permissions</h4>
+							<h4 class="menu-text">Участники ЭСТБ</h4>
 							<i class="menu-icon ki ki-bold-more-hor icon-md"></i>
 						</li>
 						<li class="menu-item menu-item-active" aria-haspopup="true">
-							<a href="/sebt/<?=$language;?>/users" class="menu-link">
+							<a href="/sebt/pages/firms.php" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Члены биржи</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/pages/users.php" class="menu-link">
 								<span class="svg-icon menu-icon">
 									<i class="fas fa-align-justify"></i>
 								</span>
@@ -88,7 +96,7 @@
 							</a>
 						</li>
 						<li class="menu-item menu-item-active" aria-haspopup="true">
-							<a href="/sebt/<?=$language;?>/roles" class="menu-link">
+							<a href="/sebt/pages/roles.php" class="menu-link">
 								<span class="svg-icon menu-icon">
 									<i class="fas fa-align-justify"></i>
 								</span>
@@ -96,11 +104,51 @@
 							</a>
 						</li>
 						<li class="menu-item menu-item-active" aria-haspopup="true">
-							<a href="/sebt/<?=$language;?>/permission" class="menu-link">
+							<a href="/sebt/pages/permission.php" class="menu-link">
 								<span class="svg-icon menu-icon">
 									<i class="fas fa-align-justify"></i>
 								</span>
 								<span class="menu-text">Права доступа</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/pages/log.php" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Логи</span>
+							</a>
+						</li>
+						<li class="menu-section">
+							<h4 class="menu-text">Заявки трейдера</h4>
+							<i class="menu-icon ki ki-bold-more-hor icon-md"></i>
+						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/pages/offers.php" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Список заявок</span>
+							</a>
+						</li>
+						<li class="menu-section">
+							<h4 class="menu-text">Торги</h4>
+							<i class="menu-icon ki ki-bold-more-hor icon-md"></i>
+						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/pages/buyList.php" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Покупки</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/pages/offer_comfirm.php" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Неутвержденные заявки</span>
 							</a>
 						</li>
 					</ul>

@@ -1,4 +1,9 @@
-<?= '<link href="/sebt/assets/css/pages/wizard/wizard-6.css" rel="stylesheet" type="text/css" />'; ?>
+<?php
+$style = '<link href="/sebt/assets/css/pages/wizard/wizard-6.css" rel="stylesheet" type="text/css" />';
+require_once "../lang/ru.php";
+require_once '../header.php';
+require_once '../sidebar.php';
+?>
 	<!--begin::Content-->
 	<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
 		<!--begin::Entry-->
@@ -88,7 +93,7 @@
 										<div class="pb-10 pb-lg-12 text-center text-md-left">
 											<h3 class="font-weight-bolder text-dark font-size-h2"><?=$lang['11'];?></h3>
 											<div class="text-muted font-weight-bold font-size-h4"><?=$lang['12'];?>
-											<a href="#" class="text-primary font-weight-bolder"><?=$lang['13'];?></a></div>
+											<a href="/sebt/pages/login.php" class="text-primary font-weight-bolder"><?=$lang['13'];?></a></div>
 										</div>
 
 
@@ -124,22 +129,6 @@
 									<!--end: Wizard Step 1-->
 									<!--begin: Wizard Step 2-->
 									<div class="pb-5" data-wizard-type="step-content">
-
-
-	<div class="card card-custom mb-5">
-		<div class="card-body p-5">
-			<div class="form-group row">
-				<label  class="col-6 col-form-label"><?=$lang['15'];?></label>
-				<div class="col-6">
-					<div class="custom-file">
-						<input type="file" class="custom-file-input" id="customFile">
-						<label class="custom-file-label" for="customFile"><i class="fas fa-paperclip"></i>&nbsp;<?=$lang['16'];?></label>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
 										<!--begin::Row-->
 										<div class="row mb-5">
 											<div class="col-xl-4">
@@ -197,17 +186,21 @@
 												</select>
 											</div>
 										</div>
-
 										<div class="form-group mb-5">
 											<input type="text" class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="Юридический адрес"/>
 										</div>
-										<div class="form-group mb-5">
-											<input type='text' class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" id="kt_inputmask_3" placeholder="Мобильный телефон"/>
+										<div class="row mb-5">
+											<div class="col-xl-6">
+												<div class="form-group mb-5">
+													<input type='text' class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" id="kt_inputmask_4" placeholder="Рабочий телефон"/>
+												</div>
+											</div>
+											<div class="col-xl-6">
+												<div class="form-group mb-5">
+													<input type='text' class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" id="kt_inputmask_3" placeholder="Мобильный телефон"/>
+												</div>
+											</div>
 										</div>
-										<div class="form-group mb-5">
-											<input type='text' class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" id="kt_inputmask_4" placeholder="Рабочий телефон"/>
-										</div>
-
 										<div class="row mb-5">
 											<div class="col-xl-6">
 												<div class="form-group mb-5">
@@ -234,6 +227,61 @@
 											<div class="col-xl-6">
 												<div class="form-group mb-5">
 													<input type='text' class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="Расчетный счет"/>
+												</div>
+											</div>
+										</div>
+
+										<div class="card card-custom">
+											<div class="card-body p-5">
+												<div class="form-group row">
+													<label  class="col-6 col-form-label"><?=$lang['15'];?></label>
+													<div class="col-6">
+														<div class="custom-file">
+															<input type="file" class="custom-file-input" id="customFile">
+															<label class="custom-file-label" for="customFile"><i class="fas fa-paperclip"></i>&nbsp;<?=$lang['16'];?></label>
+														</div>
+														<span class="form-text text-muted">Прикрепите отсканированный документ</span>
+													</div>
+												</div>
+												<div class="form-group row">
+													<label  class="col-6 col-form-label">Паспортные данные</label>
+													<div class="col-6">
+														<div class="custom-file">
+															<input type="file" class="custom-file-input" id="customFile">
+															<label class="custom-file-label" for="customFile"><i class="fas fa-paperclip"></i>&nbsp;<?=$lang['16'];?></label>
+														</div>
+														<span class="form-text text-muted">Прикрепите отсканированный документ</span>
+													</div>
+												</div>
+												<div class="form-group row">
+													<label  class="col-6 col-form-label">Письмо</label>
+													<div class="col-6">
+														<div class="custom-file">
+															<input type="file" class="custom-file-input" id="customFile">
+															<label class="custom-file-label" for="customFile"><i class="fas fa-paperclip"></i>&nbsp;<?=$lang['16'];?></label>
+														</div>
+														<span class="form-text text-muted">Прикрепите отсканированный документ</span>
+													</div>
+												</div>
+												<div class="form-group row">
+													<label  class="col-6 col-form-label">Guvohnoma</label>
+													<div class="col-6">
+														<div class="custom-file">
+															<input type="file" class="custom-file-input" id="customFile">
+															<label class="custom-file-label" for="customFile"><i class="fas fa-paperclip"></i>&nbsp;<?=$lang['16'];?></label>
+														</div>
+														<span class="form-text text-muted">Прикрепите отсканированный документ</span>
+													</div>
+												</div>
+												<div class="form-group row">
+													<label  class="col-6 col-form-label">Договор на членство брокерской конторы</label>
+													<div class="col-6">
+														<div class="custom-file">
+															<input type="file" class="custom-file-input" id="customFile">
+															<label class="custom-file-label" for="customFile"><i class="fas fa-paperclip"></i>&nbsp;<?=$lang['16'];?></label>
+														</div>
+														<span class="form-text text-muted">Прикрепите отсканированный документ</span>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -312,3 +360,4 @@
 	<!--end::Content-->
 <?php $script = '<script src="/sebt/assets/js/pages/crud/forms/widgets/input-mask.js"></script>
 <script src="/sebt/assets/js/pages/custom/wizard/wizard-6.js"></script>'; ?>
+<?php require_once '../footer.php'; ?>

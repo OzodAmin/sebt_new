@@ -1,3 +1,8 @@
+<?php 
+require_once "../lang/ru.php";
+require_once '../header.php';
+require_once '../sidebar.php';
+?>
 <div class="container">
 	<!--begin::Card-->
 	<div class="card card-custom">
@@ -262,3 +267,4 @@
 </div>
 
 <?php $script='<script src="/sebt/assets/js/pages/custom/user/list-datatable.js"></script>'; ?>
+<?php require_once '../footer.php'; ?>
