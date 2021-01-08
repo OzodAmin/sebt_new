@@ -229,38 +229,20 @@ require_once '../sidebar.php';
             <option>Великобритания</option>
           </select>
         </div>
-        <div class="form-group col-md-4">
-          <label>Место нахождения товара (узб)<span class="text-danger">*</span>&nbsp;<i class="far fa-question-circle text-warning" data-toggle="tooltip" data-placement="top" data-theme="dark" title="Дополнительная информация для ввода данных."></i></label>
+        <div class="form-group col-md-8">
+          <label>Место нахождения товара<span class="text-danger">*</span>&nbsp;<i class="far fa-question-circle text-warning" data-toggle="tooltip" data-placement="top" data-theme="dark" title="Дополнительная информация для ввода данных."></i></label>
           <input class="form-control" type="text"/>
-        </div>
-        <div class="form-group col-md-4">
-          <label>Место нахождения товара (рус)<span class="text-danger">*</span>&nbsp;<i class="far fa-question-circle text-warning" data-toggle="tooltip" data-placement="top" data-theme="dark" title="Дополнительная информация для ввода данных."></i></label>
-          <div class="input-group">
-            <input type="text" class="form-control">
-            <div class="input-group-append" data-toggle="tooltip" data-placement="top" title="Napishite mesto polojenie">
-              <span class="input-group-text"><i class="far fa-question-circle"></i></span>
-            </div>
-          </div>
         </div>
       </div>
       <div class="form-row">
-        <div class="form-group col-md-2">
-          <label>Тип контракта<span class="text-danger">*</span>&nbsp;<i class="far fa-question-circle text-warning" data-toggle="tooltip" data-placement="top" data-theme="dark" title="Дополнительная информация для ввода данных."></i></label>
-          <select class="form-control">
-            <option> - выберите - </option>
-            <option>внутренний</option>
-            <option>экспортный</option>
-            <option>импортный</option>
-          </select>
-        </div>
-        <div class="form-group col-md-2">
+        <div class="form-group col-md-3">
           <label>Базис поставки<span class="text-danger">*</span>&nbsp;<i class="far fa-question-circle text-warning" data-toggle="tooltip" data-placement="top" data-theme="dark" title="Дополнительная информация для ввода данных."></i></label>
           <select class="form-control">
             <option>-</option><option>EXW - самовывоз
             </option><option>FCA</option><option>FAS</option><option>FOB</option><option>CFR</option><option>CIF</option><option>CPT</option><option>CIP</option><option>DDP</option><option>DAP</option><option>DAT</option>
           </select>
         </div>
-        <div class="form-group col-md-2">
+        <div class="form-group col-md-3">
           <label>Вид сделки<span class="text-danger">*</span>&nbsp;<i class="far fa-question-circle text-warning" data-toggle="tooltip" data-placement="top" data-theme="dark" title="Дополнительная информация для ввода данных."></i></label>
           <select class="form-control">
             <option>Спот</option>
@@ -354,6 +336,47 @@ require_once '../sidebar.php';
             <label class="custom-file-label" for="customFile"><i class="fas fa-paperclip"></i>&nbsp;<?=$lang['16'];?></label>
           </div>
           
+        </div>
+      </div>
+      <hr class="bg-danger">
+      <div class="row align-items-center">
+        <div class="col text-left text-primary"><b>Товарные позиции заявки</b></div>
+        <div class="col text-right">
+          <button type="reset" class="btn btn-primary"><i class="fas fa-plus"></i>Добавить</button>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label>Наименование</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group col-md-1">
+          <label>Кол-во</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group col-md-2">
+          <label>Ед.изм.</label>
+          <select class="form-control">
+            <option>шт</option>
+            <option>грамм</option>
+            <option>кв.метр</option>
+            <option>килограмм</option>
+            <option>куб.метр</option>
+            <option>литр</option>
+            <option>тонна</option>
+          </select>
+        </div>
+        <div class="form-group col-md-1">
+          <label>Кол. лотов</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group col-md-2">
+          <label>Цена</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group col-md-2">
+          <label>Сумма</label>
+          <input type="text" class="form-control">
         </div>
       </div>
       <hr class="bg-danger">

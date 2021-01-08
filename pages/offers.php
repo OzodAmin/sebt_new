@@ -8,7 +8,7 @@ require_once '../sidebar.php';
 		<!--begin::Header-->
 		<div class="card-header flex-wrap border-0 pt-6 pb-0">
 			<div class="card-title">
-				<h3 class="card-label">СПИСОК СОБСТВЕННЫХ ЗАЯВОК</h3>
+				<h3 class="card-label">СПИСОК ЗАЯВОК</h3>
 			</div>
 			<div class="card-toolbar">
 				<button type="button" data-toggle="modal" data-target="#newUserModal" class="btn btn-primary font-weight-bolder">
@@ -22,6 +22,7 @@ require_once '../sidebar.php';
 		<thead>
 			<tr>
 				<th scope="col">№</th>
+				<th scope="col">Трейдер</th>
 				<th scope="col">Наименование</th>
 				<th scope="col">Кол-во</th>
 				<th scope="col">Цена</th>
@@ -36,6 +37,7 @@ require_once '../sidebar.php';
 		<tbody>
 			<tr>
 				<th scope="row">1</th>
+				<td>bk303-1</td>
 				<td>Шрот хлопковый<br><span class="text-danger">ООО "PLASTEKS"</span></td>
 				<td>500<br><span class="text-danger">т</span></td>
 				<td>500<br><span class="text-danger">доллар США</span></td>
@@ -52,6 +54,7 @@ require_once '../sidebar.php';
 			</tr>
 			<tr>
 				<th scope="row">2</th>
+				<td>bk303-1</td>
 				<td>Сульфат калия по 500 гр<br><span class="text-danger">ООО "ТЕСТ 1"</span></td>
 				<td>2 000<br><span class="text-danger">шт</span></td>
 				<td>500 000<br><span class="text-danger">сум</span></td>
@@ -67,6 +70,7 @@ require_once '../sidebar.php';
 			</tr>
 			<tr>
 				<th scope="row">3</th>
+				<td>bk303-4</td>
 				<td>Масло "ЁГДУ"<br><span class="text-danger">ООО "PLASTEKS"</span></td>
 				<td>860<br><span class="text-danger">кг</span></td>
 				<td>500 000<br><span class="text-danger">сум</span></td>
@@ -83,6 +87,7 @@ require_once '../sidebar.php';
 			</tr>
 			<tr>
 				<th scope="row">4</th>
+				<td>bk303-3</td>
 				<td>Масло хлоп рафин дезод в/с<br><span class="text-danger">ООО "ТЕСТ 1"</span></td>
 				<td>500<br><span class="text-danger">т</span></td>
 				<td>500 000<br><span class="text-danger">сум</span></td>
@@ -99,6 +104,7 @@ require_once '../sidebar.php';
 			</tr>
 			<tr>
 				<th scope="row">5</th>
+				<td>bk303-3</td>
 				<td>Уголь каменный<br><span class="text-danger">ООО "DAVRON BOBO"</span></td>
 				<td>500<br><span class="text-danger">т</span></td>
 				<td>500 000<br><span class="text-danger">сум</span></td>
@@ -115,23 +121,7 @@ require_once '../sidebar.php';
 		</tbody>
 	</table>
 </div>
-<nav aria-label="Page navigation example">
-	<ul class="pagination justify-content-end">
-		<li class="page-item disabled">
-			<a class="page-link" href="#" tabindex="-1" aria-disabled="true">
-				<span aria-hidden="true">&laquo;</span>
-			</a>
-		</li>
-		<li class="page-item"><a class="page-link" href="#">1</a></li>
-		<li class="page-item"><a class="page-link" href="#">2</a></li>
-		<li class="page-item"><a class="page-link" href="#">3</a></li>
-		<li class="page-item">
-			<a class="page-link" href="#">
-				<span aria-hidden="true">&raquo;</span>
-			</a>
-		</li>
-	</ul>
-</nav>
+
 <div class="modal" tabindex="-1" id="newUserModal">
 	<div class="modal-dialog modal-dialog-centered">
 		<div class="modal-content">

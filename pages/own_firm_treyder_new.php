@@ -74,31 +74,9 @@ require_once '../sidebar.php';
           <input class="form-control" type="text"/>
         </div>
       </div>
-      <hr>
-      <!-- <div class="row align-items-center">
-        <div class="col text-left">Банковские реквизиты</div>
-        <div class="col text-right">
-          <button type="reset" class="btn btn-primary font-weight-bold">
-            <i class="fas fa-plus"></i>Добавить банк
-          </button>
-        </div>
-      </div>
-      <p><label  class="col-form-label"></label></p>
-      <div class="form-group">
-          <input class="form-control" type="text" placeholder="Наименование банка" />
-      </div>
-      <div class="form-group row">
-        <div class="col-6">
-          <input class="form-control" type="text" placeholder="Расчетный счет" />
-        </div>
-        <div class="col-6">
-          <input class="form-control" type="text" placeholder="МФО" />
-        </div>
-      </div>
-      <hr> -->
     </div>
     <div class="card-footer">
-      <a href="/sebt/pages/users.php" class="btn btn-secondary mr-2">Отмена</a>
+      <a href="/sebt/pages/own_firm_treyder_list.php" class="btn btn-secondary mr-2">Отмена</a>
       <button type="button" class="btn btn-primary">Сохранить</button>
     </div>
   </form>

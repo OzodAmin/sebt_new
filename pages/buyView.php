@@ -10,11 +10,20 @@ require_once '../sidebar.php';
 		<div class="container">
 			<div class="d-flex flex-row">
 				<div class="flex-row-fluid ml-lg-8">
-					<div class="card card-custom card-stretch gutter-b">
+					<div class="card card-custom" id="kt_page_sticky_card">
+						<div class="card-header">
+							
+							<div class="card-toolbar">
+								<a href="/sebt/pages/buyList.php" class="btn btn-light-primary font-weight-bolder mr-2">
+								<i class="ki ki-long-arrow-back icon-xs"></i>Вернуться в список</a>
+								<a href="#" class="btn btn-icon btn-sm btn-primary mr-1" data-card-tool="toggle"><i class="ki ki-arrow-down icon-nm"></i></a>
+							</div>
+							<div class="card-title">
+								<h3 class="font-weight-bold font-size-h4 text-dark-75 mb-3 card-label">Хлопоковое волокно 1 сорт, олий, 4-тип урожай 2019 года</h3>
+							</div>
+						</div>
 						<!--begin::Card Body-->
 						<div class="card-body">
-							<h3 class="font-weight-bold font-size-h4 text-dark-75 mb-3">Хлопоковое волокно 1 сорт, олий, 4-тип урожай 2019 года</h3>
-							<p class="text-center text-primary">Товар</p>
 							<div class="d-flex mb-3">
 								<span class="text-dark-50 flex-root font-weight-bold">№ заявки:</span>
 								<span class="text-dark flex-root font-weight-bold">3420</span>
@@ -76,37 +85,11 @@ require_once '../sidebar.php';
 								<span class="text-dark-50 flex-root font-weight-bold">Указание по сумме:</span>
 								<span class="text-dark flex-root font-weight-bold">-</span>
 							</div> -->
-
-
-							<!-- <div class="d-flex mb-3">
-								<span class="text-dark-50 flex-root font-weight-bold"></span>
-								<span class="text-dark flex-root font-weight-bold"></span>
-							</div>
-							<div class="d-flex mb-3">
-								<span class="text-dark-50 flex-root font-weight-bold"></span>
-								<span class="text-dark flex-root font-weight-bold"></span>
-							</div>
-							<div class="d-flex mb-3">
-								<span class="text-dark-50 flex-root font-weight-bold"></span>
-								<span class="text-dark flex-root font-weight-bold"></span>
-							</div>
-							<div class="d-flex mb-3">
-								<span class="text-dark-50 flex-root font-weight-bold"></span>
-								<span class="text-dark flex-root font-weight-bold"></span>
-							</div>
-							<div class="d-flex mb-3">
-								<span class="text-dark-50 flex-root font-weight-bold"></span>
-								<span class="text-dark flex-root font-weight-bold"></span>
-							</div>
-							<div class="d-flex mb-3">
-								<span class="text-dark-50 flex-root font-weight-bold"></span>
-								<span class="text-dark flex-root font-weight-bold"></span>
-							</div> -->
 						</div>
 						<div class="card-footer">
 							<p class="text-center text-warning"><b>Укажите свое предложение</b></p>
 							<form>
-								<div class="form-group row">
+								<!-- <div class="form-group row">
 									<label class="col-sm-4 col-form-label bg-warning">Тип сделки:<span class="text-danger">*</span></label>
 									<div class="col-sm-8">
 										<select class="form-control">
@@ -118,8 +101,12 @@ require_once '../sidebar.php';
 											<option>Экспорт без вывоза</option>
 										</select>
 									</div>
-								</div>
+								</div> -->
 								<div class="form-group row">
+									<label class="col-sm-4 col-form-label bg-warning">Тип сделки:</label>
+									<div class="col-sm-8">Внутренний</div>
+								</div>
+								<!-- <div class="form-group row">
 									<label class="col-sm-4 col-form-label bg-warning">Клиент:<span class="text-danger">*</span></label>
 									<div class="col-sm-8">
 										<select class="form-control">
@@ -129,8 +116,12 @@ require_once '../sidebar.php';
 											<option>ООО "PLASTEKS"</option>
 										</select>
 									</div>
-								</div>
+								</div> -->
 								<div class="form-group row">
+									<label class="col-sm-4 col-form-label bg-warning">Клиент:</label>
+									<div class="col-sm-8">ООО "DAVRON BOBO"</div>
+								</div>
+								<!-- <div class="form-group row">
 									<div class="col-sm-8">
 										<div class="row">
 											<label class="col-sm-4 col-form-label bg-warning">Кол-во лотов:<span class="text-danger">*</span></label>
@@ -151,24 +142,46 @@ require_once '../sidebar.php';
 										</div>
 									</div>
 									<div class="col-sm-4"><span class="text-warning">Количество:</span> 100 т</div>
-								</div>
+								</div> -->
 								<div class="form-group row">
-									<div class="col-sm-8">
+									<div class="col-sm-4">
 										<div class="row">
-											<label class="col-sm-4 col-form-label bg-warning">Цена:<span class="text-danger">*</span></label>
-											<div class="col-sm-8">
-												<div class="input-group">
-													<input type="text" class="form-control" value="50000">
-													<div class="input-group-append">
-														<span class="input-group-text">сум</span>
-													</div>
-												</div>
-											</div>	
+											<label class="col-sm-8 col-form-label bg-warning">Кол-во лотов:</label>
+											<div class="col-sm-4">2</div>
 										</div>
 									</div>
-									<div class="col-sm-4"><span class="text-warning">Сумма:</span> 5 000 000 сум</div>
+									<div class="col-sm-8">
+										<div class="row">
+											<label class="col-sm-4 col-form-label bg-warning">Количество:</label>
+											<div class="col-sm-8">100 т</div>
+										</div>
+									</div>
 								</div>
-								<center><button class="btn btn-primary btn-block">купить</button></center>
+								<div class="form-group row">
+									<label class="col-sm-4 col-form-label bg-warning">Указание по цене:</label>
+									<div class="col-sm-8">нет ограничений по допустимой цене покупки</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-sm-4 col-form-label bg-warning">Указание по сумме:</label>
+									<div class="col-sm-8">нет ограничений по максимальной сумме покупки</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-sm-4 col-form-label bg-warning">Цена:<span class="text-danger">*</span></label>
+									<div class="col-sm-8">
+										<div class="input-group">
+											<input type="text" class="form-control" value="50000">
+											<div class="input-group-append">
+												<span class="input-group-text">сум</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-sm-4 col-form-label bg-warning">Сумма:</label>
+									<div class="col-sm-8">5 000 000 сум</div>
+								</div>
+								<center><button class="btn btn-primary btn-block" id="kt_btn_1">купить</button></center>
 							</form>
 						</div>
 					</div>
@@ -210,3 +223,20 @@ require_once '../sidebar.php';
 		</div>
 	</div>
 </div>
+<?php 
+	$script = '
+<script>
+
+var card = new KTCard("kt_page_sticky_card");
+var btn = KTUtil.getById("kt_btn_1");
+
+KTUtil.addEvent(btn, "click", function() {
+    KTUtil.btnWait(btn, "spinner spinner-right spinner-white pr-15", "Please wait");
+    setTimeout(function() {
+        KTUtil.btnRelease(btn);
+    }, 9000);
+});
+</script>	
+';
+	require_once '../footer.php'; 
+?>

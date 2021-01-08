@@ -38,7 +38,10 @@ require_once '../sidebar.php';
 				<td>500<br><span class="text-danger">доллар США</span></td>
 				<td>250 000 000<br><span class="text-danger">сум</span></td>
 				<td>
-					<a href="/sebt/pages/offer_comfirm_edit.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+					<a href="/sebt/pages/offer_comfirm_edit.php" class="btn btn-icon btn-light btn-hover-primary">
+						<i class="fas fa-arrow-right"></i>
+					</a>
+					<!-- <a href="/sebt/pages/offer_comfirm_edit.php" class="btn btn-warning"><i class="fas fa-edit"></i></a> -->
 				</td>
 			</tr>
 			<tr>

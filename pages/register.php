@@ -129,6 +129,14 @@ require_once '../sidebar.php';
 									<!--end: Wizard Step 1-->
 									<!--begin: Wizard Step 2-->
 									<div class="pb-5" data-wizard-type="step-content">
+										<div class="form-group row">
+										<label  class="col-2 col-form-label">Филиал</label>
+										<div class="col-10">
+										<select class="form-control">
+										<option>AJ "Respublika ko'p tarmoqli agrosanoat birjasi"</option><option>АНДИЖАН</option><option>БУХАРА</option><option>КАРАКАЛПАКСТАН</option><option>КАШКАДАРЬЯ</option><option>НАВОИ</option><option>НАМАНГАН</option><option>САМАРКАНД</option><option>СУРХАНДАРЬЯ</option><option>ФЕРГАНА</option><option>ХОРЕЗМ</option>
+										</select>
+										</div>
+										</div>
 										<!--begin::Row-->
 										<div class="row mb-5">
 											<div class="col-xl-4">

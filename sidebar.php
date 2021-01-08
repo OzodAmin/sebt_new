@@ -48,7 +48,7 @@
 					<!--begin::Menu Nav-->
 					<ul class="menu-nav">
 						<li class="menu-section">
-							<h4 class="menu-text">Login & Register</h4>
+							<h4 class="menu-text">Вход & Регистрация</h4>
 							<i class="menu-icon ki ki-bold-more-hor icon-md"></i>
 						</li>
 						<li class="menu-item menu-item-active" aria-haspopup="true">
@@ -56,7 +56,7 @@
 								<span class="svg-icon menu-icon">
 									<i class="fas fa-align-justify"></i>
 								</span>
-								<span class="menu-text">Login</span>
+								<span class="menu-text">Вход</span>
 							</a>
 						</li>
 						<li class="menu-item menu-item-active" aria-haspopup="true">
@@ -64,7 +64,7 @@
 								<span class="svg-icon menu-icon">
 									<i class="fas fa-align-justify"></i>
 								</span>
-								<span class="menu-text">Register</span>
+								<span class="menu-text">Регистрация член биржи</span>
 							</a>
 						</li>
 						<li class="menu-item menu-item-active" aria-haspopup="true">
@@ -118,10 +118,78 @@
 								</span>
 								<span class="menu-text">Логи</span>
 							</a>
+						</li>						
+						<li class="menu-section">
+							<h4 class="menu-text">модератор</h4>
+							<i class="menu-icon ki ki-bold-more-hor icon-md"></i>
+						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/pages/offer_comfirm.php" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Неутвержденные заявки</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/pages/tarifs.php" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Тарифы</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/pages/ticket_list.php" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Протокол торгов</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/pages/products.php" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Товары</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/pages/admin_bill_list.php" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Счета на оплату (admin)</span>
+							</a>
 						</li>
 						<li class="menu-section">
-							<h4 class="menu-text">Заявки трейдера</h4>
+							<h4 class="menu-text">Кабинет член биржи</h4>
 							<i class="menu-icon ki ki-bold-more-hor icon-md"></i>
+						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/pages/own_firm_treyder_list.php" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Трейдеры</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/pages/bill_list.php" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Счета на оплату</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/pages/own_firm_client_list.php" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Клиенты (резидент)</span>
+							</a>
 						</li>
 						<li class="menu-item menu-item-active" aria-haspopup="true">
 							<a href="/sebt/pages/offers.php" class="menu-link">
@@ -131,24 +199,20 @@
 								<span class="menu-text">Список заявок</span>
 							</a>
 						</li>
-						<li class="menu-section">
-							<h4 class="menu-text">Торги</h4>
-							<i class="menu-icon ki ki-bold-more-hor icon-md"></i>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/pages/buliten.php" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Бюллетень</span>
+							</a>
 						</li>
 						<li class="menu-item menu-item-active" aria-haspopup="true">
 							<a href="/sebt/pages/buyList.php" class="menu-link">
 								<span class="svg-icon menu-icon">
 									<i class="fas fa-align-justify"></i>
 								</span>
-								<span class="menu-text">Покупки</span>
-							</a>
-						</li>
-						<li class="menu-item menu-item-active" aria-haspopup="true">
-							<a href="/sebt/pages/offer_comfirm.php" class="menu-link">
-								<span class="svg-icon menu-icon">
-									<i class="fas fa-align-justify"></i>
-								</span>
-								<span class="menu-text">Неутвержденные заявки</span>
+								<span class="menu-text">Аукционы</span>
 							</a>
 						</li>
 					</ul>
