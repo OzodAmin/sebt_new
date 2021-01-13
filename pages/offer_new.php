@@ -38,6 +38,34 @@ require_once '../sidebar.php';
           </select>
         </div>
       </div>
+      <div class="form-group row">
+        <label  class="col-2 col-form-label">Договор поручениe</label>
+        <div class="col-10">
+          <select class="form-control">
+            <option>(не выбрано)</option>
+            <option>Договор поручениe от 12.12.2020</option>
+            <option>Договор поручениe от 12.04.2020</option>
+            <option>Договор поручениe от 12.01.2020</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label>Тип торгов<span class="text-danger">*</span>&nbsp;<i class="far fa-question-circle text-warning" data-toggle="tooltip" data-placement="top" data-theme="dark" title="Дополнительная информация для ввода данных."></i></label>
+          <select class="form-control">
+            <option>Биржевые торги</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label>Секция торгов<span class="text-danger">*</span>&nbsp;<i class="far fa-question-circle text-warning" data-toggle="tooltip" data-placement="top" data-theme="dark" title="Дополнительная информация для ввода данных."></i></label>
+          <select class="form-control">
+            <option>Секция реализации высоколиквидной продукции предприятий-монополистов</option>
+            <option>Секция реализации биржевых товаров, не входящих в перечень высоколиквидной продукции предприятий-монополистов</option>
+            <option>Секция фьючерсной торговли</option>
+            <option>Секция торгов опционами</option>
+          </select>
+        </div>
+      </div>
       <p class="text-primary"><b>Сведения по товару</b></p>
       <div class="form-row">
         <div class="form-group col-md-6">
@@ -411,15 +439,6 @@ require_once '../sidebar.php';
       </div>
       <div class="form-group row">
         <label  class="col-2 col-form-label">Документ качества (сертификат, паспорт, ТУ)</label>
-        <div class="col-10">
-          <div class="custom-file">
-            <input type="file" class="custom-file-input" id="customFile">
-            <label class="custom-file-label" for="customFile"><i class="fas fa-paperclip"></i>&nbsp;<?=$lang['16'];?></label>
-          </div>
-        </div>
-      </div>
-      <div class="form-group row">
-        <label  class="col-2 col-form-label">Договор поручениe</label>
         <div class="col-10">
           <div class="custom-file">
             <input type="file" class="custom-file-input" id="customFile">

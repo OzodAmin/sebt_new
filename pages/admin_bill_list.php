@@ -10,11 +10,11 @@ require_once '../sidebar.php';
 			<div class="card-title">
 				<h3 class="card-label">Счета на оплату биржевого сбора</h3>
 			</div>
-			<!-- <div class="card-toolbar">
+			<div class="card-toolbar">
 				<button class="btn btn-secondary mr-2 font-weight-bolder" data-toggle="modal" data-target="#myModal">
-					<i class="fas fa-plus"></i>	Новый счет на оплату
+					<i class="fas fa-plus"></i>	Загрузка платежей из файла
 				</button>
-			</div> -->
+			</div>
 		</div>
 		<!--end::Header-->
 		<!--begin::Body-->
@@ -88,7 +88,7 @@ require_once '../sidebar.php';
 	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Ввод нового клиента РКП (резидента)</h5>
+				<h5 class="modal-title" id="exampleModalLabel">Загрузка оплат биржевого сбора из файла</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<i aria-hidden="true" class="ki ki-close"></i>
 				</button>
@@ -96,15 +96,7 @@ require_once '../sidebar.php';
 			<form class="form">
 				<div class="modal-body">
 					<div class="form-group row">
-						<label class="col-form-label text-right col-lg-3 col-sm-12">Реквизиты клиента<span class="text-danger">*</span></label>
-						<div class="col-lg-9 col-md-9 col-sm-12">
-							<select class="form-control">
-								<option>MCHJ "AKUMSHIN SAVDO"</option>
-							</select>
-						</div>
-					</div>
-					<div class="form-group row">
-						<label class="col-form-label text-right col-lg-3 col-sm-12">Свидетельство о регистрации</label>
+						<label class="col-form-label text-right col-lg-3 col-sm-12">Текстовый файл</label>
 						<div class="col-9">
 							<div class="custom-file">
 								<input type="file" class="custom-file-input" id="customFile">
@@ -113,21 +105,10 @@ require_once '../sidebar.php';
 							<span class="form-text text-muted">Прикрепите отсканированный документ</span>
 						</div>
 					</div>
-					<div class="form-group row">
-						<label class="col-form-label text-right col-lg-3 col-sm-12">Разрешение на оптовую торговлю</label>
-						<div class="col-9">
-							<div class="custom-file">
-								<input type="file" class="custom-file-input" id="customFile">
-								<label class="custom-file-label" for="customFile"><i class="fas fa-paperclip"></i>&nbsp;<?=$lang['16'];?></label>
-							</div>
-							<span class="form-text text-muted">Прикрепите отсканированный документ</span>
-						</div>
-					</div>
-					
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary mr-2" data-dismiss="modal">Отмена</button>
-					<button type="button" class="btn btn-primary">Сохранить</button>
+					<a href="/sebt/pages/admin_bill_pay.php" class="btn btn-primary">загрузить файл</a>
 				</div>
 			</form>
 		</div>

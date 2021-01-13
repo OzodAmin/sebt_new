@@ -184,11 +184,35 @@
 							</a>
 						</li>
 						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/pages/bill_pay_list.php" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Список оплат</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/pages/reestr.php" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Реестр сделок</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
 							<a href="/sebt/pages/own_firm_client_list.php" class="menu-link">
 								<span class="svg-icon menu-icon">
 									<i class="fas fa-align-justify"></i>
 								</span>
 								<span class="menu-text">Клиенты (резидент)</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item-active" aria-haspopup="true">
+							<a href="/sebt/pages/assignment.php" class="menu-link">
+								<span class="svg-icon menu-icon">
+									<i class="fas fa-align-justify"></i>
+								</span>
+								<span class="menu-text">Договор поручениe</span>
 							</a>
 						</li>
 						<li class="menu-item menu-item-active" aria-haspopup="true">

@@ -181,48 +181,17 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</span>
 					</div>
 				</div>
 				<div class="form-group row">
-					<label class="col-sm-4 col-form-label bg-warning">Требуемый объем (kол-во лотов)<span class="text-danger">*</span></label>
-					<div class="col-sm-8">
+					<label class="col-sm-4 col-form-label bg-warning">Договор поручениe:<span class="text-danger">*</span></label>
+					<div class="col-8">
 						<select class="form-control">
-							<option selected>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
-							<option>6</option>
-							<option>7</option>
-							<option>8</option>
-							<option>9</option>
-							<option>10</option>
+							<option>(не выбрано)</option>
+							<option>Договор поручениe от 12.12.2020</option>
+							<option>Договор поручениe от 12.04.2020</option>
+							<option>Договор поручениe от 12.01.2020</option>
 						</select>
 					</div>
 				</div>
-				<div class="form-group row">
-					<label class="col-sm-4 col-form-label bg-warning">Ограничение по цене<span class="text-danger">*</span></label>
-					<div class="col-sm-8">
-						<div class="form-check form-check-inline">
-				            <input class="form-check-input" type="radio">
-				            <label class="form-check-label">имеется</label>
-				          </div>
-				          <div class="form-check form-check-inline">
-				            <input class="form-check-input" type="radio">
-				            <label class="form-check-label">отсутствует</label>
-				          </div>
-					</div>
-				</div>
-				<div class="form-group row">
-					<label class="col-sm-4 col-form-label bg-warning">Ограничение по сумме<span class="text-danger">*</span></label>
-					<div class="col-sm-8">
-						<div class="form-check form-check-inline">
-				            <input class="form-check-input" type="radio">
-				            <label class="form-check-label">имеется</label>
-				          </div>
-				          <div class="form-check form-check-inline">
-				            <input class="form-check-input" type="radio">
-				            <label class="form-check-label">отсутствует</label>
-				          </div>
-					</div>
-				</div>
+				
 				<div class="form-group row">
 					<button class="col-sm-4 btn btn-outline-primary" data-toggle="modal" data-target="#calculator">Калькулятор расходов</button>
 				</div>
