@@ -86,7 +86,7 @@ require_once '../sidebar.php';
 								</div>
 								<!--end::Nav-->
 								<!--begin::Form-->
-								<form class="px-10" novalidate="novalidate" id="kt_form">
+								<form class="px-10" novalidate="novalidate" id="kt_form" action="/sebt/pages/firms.php">
 									<!--begin: Wizard Step 1-->
 									<div class="pb-5" data-wizard-type="step-content" data-wizard-state="current">
 										<!--begin::Title-->

@@ -11,7 +11,7 @@ require_once '../sidebar.php';
 				<h3 class="card-label">СПИСОК ЧЛЕНОВ БИРЖИ</h3>
 			</div>
 			<div class="card-toolbar">
-				<a href="/sebt/pages/firms_new.php" class="btn btn-primary font-weight-bolder">
+				<a href="/sebt/pages/firms_moderate.php" class="btn btn-primary font-weight-bolder">
 					<i class="fas fa-plus"></i>НОВЫЙ ЧЛЕН БИРЖИ
 				</a>
 			</div>
@@ -39,7 +39,7 @@ require_once '../sidebar.php';
 				<td>Паркентский р-н, п.Хисарак</td>
 				<td><span class="text-success">Активен</span></td>
 				<td>
-					<a href="/sebt/pages/firms_new.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+					<a href="/sebt/pages/firms_moderate.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
 				</td>
 			</tr>
 			<tr>
@@ -49,7 +49,7 @@ require_once '../sidebar.php';
 				<td>Кибрайский р-н, ул.Сичков</td>
 				<td><span class="text-success">Активен</span></td>
 				<td>
-					<a href="/sebt/pages/firms_new.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+					<a href="/sebt/pages/firms_moderate.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
 				</td>
 			</tr>
 			<tr>
@@ -59,7 +59,7 @@ require_once '../sidebar.php';
 				<td>г.Карши ул.Таймир 34</td>
 				<td><span class="text-success">Активен</span></td>
 				<td>
-					<a href="/sebt/pages/firms_new.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+					<a href="/sebt/pages/firms_moderate.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
 				</td>
 			</tr>
 			<tr>
@@ -67,9 +67,9 @@ require_once '../sidebar.php';
 				<td>02001007</td>
 				<td><a href="/sebt/pages/firms_view.php">XK "FALAK-SARI"</a></td>
 				<td>г.Карши 3-микрорайон</td>
-				<td><span class="text-success">Активен</span></td>
+				<td><span class="text-warning">Новый член биржи</span></td>
 				<td>
-					<a href="/sebt/pages/firms_new.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+					<a href="/sebt/pages/firms_moderate.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
 				</td>
 			</tr>
 			<tr>
@@ -79,7 +79,7 @@ require_once '../sidebar.php';
 				<td>Чирокчинский р-н ул.У.Бозоров 70</td>
 				<td><span class="text-warning">Новый член биржи</span></td>
 				<td>
-					<a href="/sebt/pages/firms_new.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+					<a href="/sebt/pages/firms_moderate.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
 				</td>
 			</tr>
 			<tr>
@@ -87,9 +87,9 @@ require_once '../sidebar.php';
 				<td>02001007</td>
 				<td><a href="/sebt/pages/firms_view.php">MChJ "KASPIY INVEST"</a></td>
 				<td>Чирокчинский р-н ул.У.Бозоров 70</td>
-				<td><span class="text-danger">Нарушение правил торгов</span></td>
+				<td><span class="text-danger">Отказан</span></td>
 				<td>
-					<a href="/sebt/pages/firms_new.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+					<a href="/sebt/pages/firms_moderate.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
 				</td>
 			</tr>
 			<tr>
@@ -99,7 +99,7 @@ require_once '../sidebar.php';
 				<td>Чирокчинский р-н ул.У.Бозоров 70</td>
 				<td><span class="text-danger">Неуплата комиссионных сборов</span></td>
 				<td>
-					<a href="/sebt/pages/firms_new.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+					<a href="/sebt/pages/firms_moderate.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
 				</td>
 			</tr>
 			<tr>
@@ -109,7 +109,7 @@ require_once '../sidebar.php';
 				<td>Чирокчинский р-н ул.У.Бозоров 70</a></td>
 				<td><span class="text-danger">Неполнота предоставленных документов</span></td>
 				<td>
-					<a href="/sebt/pages/firms_new.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+					<a href="/sebt/pages/firms_moderate.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
 				</td>
 			</tr>
 			<tr>
@@ -119,7 +119,7 @@ require_once '../sidebar.php';
 				<td>Чирокчинский р-н ул.У.Бозоров 70</td>
 				<td><span class="text-danger">Неактивен по прочим причинам</span></td>
 				<td>
-					<a href="/sebt/pages/firms_new.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+					<a href="/sebt/pages/firms_moderate.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
 				</td>
 			</tr>
 			<tr>
@@ -129,7 +129,7 @@ require_once '../sidebar.php';
 				<td>Чирокчинский р-н ул.У.Бозоров 70</td>
 				<td><span class="text-danger">Заблокирован сотрудником РКП</span></td>
 				<td>
-					<a href="/sebt/pages/firms_new.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+					<a href="/sebt/pages/firms_moderate.php" class="btn btn-warning"><i class="fas fa-edit"></i></a>
 				</td>
 			</tr>
 		</tbody>

@@ -25,22 +25,27 @@ require_once '../sidebar.php';
 			<tr>
 				<th scope="col">№</th>
 				<th scope="col">Брокер</th>
-				<th scope="col">Вид</th>
-				<th scope="col">Кол-вo</th>
 				<th scope="col">Срок</th>
+				<th scope="col">Статус</th>
 				<th scope="col"></th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
 				<th scope="row">1</th>
-				<td>2233</td>
-				<td>Продажа</td>
-				<td>123 <br><span class="text-danger">шт</span></td>
+				<td>bk2233</td>
 				<td>12.12.2021</td>
+				<td><span class="label label-success label-inline font-weight-bolder ">Новый</span></td>
 				<td>
-					<button type="button" data-toggle="modal" data-target="#newUserModal" class="btn btn-warning"><i class="fas fa-edit"></i></button>
+					<button type="button" class="btn btn-danger delete"><i class="fas fa-trash-alt"></i></button>
 				</td>
+			</tr>
+			<tr>
+				<th scope="row">1</th>
+				<td>bk2233</td>
+				<td>12.12.2021</td>
+				<td><span class="label label-danger label-inline font-weight-bolder ">Исползован</span></td>
+				<td></td>
 			</tr>
 		</tbody>
 	</table>
@@ -63,70 +68,43 @@ require_once '../sidebar.php';
 							</select>
 						</div>
 						<div class="form-group col-6">
-							<label>Вид<span class="text-danger">*</span></label>
-							<select class="form-control">
-								<option>Продажа</option>
-								<option>Покупка</option>
-							</select>
+							<label>Срок<span class="text-danger">*</span></label>
+							<input type="text" class="form-control">
 						</div>
 					</div>
-					<div class="row">
-					<div class="form-group col-4">
-						<label>Кол-вo<span class="text-danger">*</span></label>
-						<input type="text" class="form-control">
-					</div>
-					<div class="form-group col-4">
-						<label>Ед.изм<span class="text-danger">*</span></label>
-						<select class="form-control">
-							<option>шт</option>
-				            <option>грамм</option>
-				            <option>кв.метр</option>
-				            <option>килограмм</option>
-				            <option>куб.метр</option>
-				            <option>литр</option>
-				            <option>тонна</option>
-				        </select>
-					</div>
-					<div class="form-group col-4">
-						<label>Срок<span class="text-danger">*</span></label>
-						<input type="text" class="form-control">
-					</div>
-					</div>
+					<div class="form-group">
+				        <label>Документ<span class="text-danger">*</span></label>
+				        <div class="col-10">
+				          <div class="form-check form-check-inline">
+				            <input class="form-check-input" type="radio">
+				            <label class="form-check-label">Складская справка</label>
+				          </div>
+				          <div class="form-check form-check-inline">
+				            <input class="form-check-input" type="radio">
+				            <label class="form-check-label">Документ качества (сертификат, паспорт, ТУ)</label>
+				          </div>
+				        </div>
+				      </div>
 
-<p>*****   Когда покупка   *****</p>
-					<div class="row">
-					<div class="form-group col-4">
-						<label>Мин. цена</label>
-						<input type="text" class="form-control">
+					<div class="form-group">
+						<label>Документ товара<span class="text-danger">*</span></label>
+						<div class="custom-file">
+							<input type="file" class="custom-file-input" id="customFile">
+							<label class="custom-file-label" for="customFile"><i class="fas fa-paperclip"></i>&nbsp;Обзор</label>
+						</div>
 					</div>
-					<div class="form-group col-4">
-						<label>Макс. цена<span class="text-danger">*</span></label>
-						<input type="text" class="form-control">
+					<div class="form-group">
+						<label>Гарантийное письмо<span class="text-danger">*</span></label>
+						<div class="custom-file">
+							<input type="file" class="custom-file-input" id="customFile">
+							<label class="custom-file-label" for="customFile"><i class="fas fa-paperclip"></i>&nbsp;Обзор</label>
+						</div>
 					</div>
-					<div class="form-group col-4">
-						<label>Валюта</label>
-						<select class="form-control">
-							<option>UZS</option>
-				            <option>RUB</option>
-				            <option>EUR</option>
-				            <option>USD</option>
-				        </select>
-					</div>
-					
-					</div>
-<p>*****   *****   *****</p>
-				<div class="form-group">
-					<label>Договор поручениe</label>
-					<div class="custom-file">
-						<input type="file" class="custom-file-input" id="customFile">
-						<label class="custom-file-label" for="customFile"><i class="fas fa-paperclip"></i>&nbsp;Обзор</label>
-					</div>
-				</div>
 				</form>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
-				<button type="button" class="btn btn-primary">Сохранить</button>
+				<a href="/sebt/pages/bk_assignment.php" class="btn btn-primary">Сохранить</a>
 			</div>
 		</div>
 	</div>
@@ -138,5 +116,26 @@ require_once '../sidebar.php';
 	<!--end::Card-->
 </div>
 
-<?php $script='<script src="/sebt/assets/js/pages/custom/user/list-datatable.js"></script>'; ?>
+<?php $script = '
+<script>
+	$(".delete").click(function(e) {
+		Swal.fire({
+			title: "Удалить договор поручениe?",
+			text: "Вы не сможете отменить это!",
+			icon: "warning",
+			showCancelButton: true,
+			confirmButtonText: "Да удалить!",
+			cancelButtonText: "Отмена"
+		}).then(function(result) {
+			if (result.value) {
+				Swal.fire(
+					"Deleted!",
+					"Your file has been deleted.",
+					"success"
+				)
+			}
+		});
+	});
+</script>	
+'; ?>
 <?php require_once '../footer.php'; ?>

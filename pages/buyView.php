@@ -88,7 +88,7 @@ require_once '../sidebar.php';
 						</div>
 						<div class="card-footer">
 							<p class="text-center text-warning"><b>Укажите свое предложение</b></p>
-							<form>
+							<form action="/sebt/pages/reestr.php">
 								<!-- <div class="form-group row">
 									<label class="col-sm-4 col-form-label bg-warning">Тип сделки:<span class="text-danger">*</span></label>
 									<div class="col-sm-8">

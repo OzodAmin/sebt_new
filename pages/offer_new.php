@@ -407,45 +407,6 @@ require_once '../sidebar.php';
           <input type="text" class="form-control">
         </div>
       </div>
-      <hr class="bg-danger">
-      <div class="row align-items-center">
-        <div class="col text-left text-primary"><b>Сопроводительные документы к заявке</b></div>
-        <div class="col text-right">
-          <button type="reset" class="btn btn-primary">
-            <i class="fas fa-plus"></i>Добавить документ
-          </button>
-        </div>
-
-      </div>
-      <small class="form-text text-primary">Отсканированные документы в формате MS Word, PDF или в виде картинки jpg.</small>
-      <div class="form-group row">
-        <label  class="col-2 col-form-label">Складская справка</label>
-        <div class="col-10">
-          <div class="custom-file">
-            <input type="file" class="custom-file-input" id="customFile">
-            <label class="custom-file-label" for="customFile"><i class="fas fa-paperclip"></i>&nbsp;<?=$lang['16'];?></label>
-          </div>
-
-        </div>
-      </div>
-      <div class="form-group row">
-        <label  class="col-2 col-form-label">Гарантийное письмо</label>
-        <div class="col-10">
-          <div class="custom-file">
-            <input type="file" class="custom-file-input" id="customFile">
-            <label class="custom-file-label" for="customFile"><i class="fas fa-paperclip"></i>&nbsp;<?=$lang['16'];?></label>
-          </div>
-        </div>
-      </div>
-      <div class="form-group row">
-        <label  class="col-2 col-form-label">Документ качества (сертификат, паспорт, ТУ)</label>
-        <div class="col-10">
-          <div class="custom-file">
-            <input type="file" class="custom-file-input" id="customFile">
-            <label class="custom-file-label" for="customFile"><i class="fas fa-paperclip"></i>&nbsp;<?=$lang['16'];?></label>
-          </div>
-        </div>
-      </div>
 
       <div class="form-group row">
         <label  class="col-2 col-form-label">Код подтверждения действия<span class="text-danger">*</span></label>
@@ -455,7 +416,7 @@ require_once '../sidebar.php';
       </div>
 
       <a href="/sebt/pages/offers.php" class="btn btn-secondary mr-2">Отмена</a>
-      <button type="button" class="btn btn-primary">Сохранить</button>
+      <a href="/sebt/pages/offers.php" class="btn btn-primary">Сохранить</a>
     </div>
   </form>
 </div>

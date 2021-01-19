@@ -170,32 +170,39 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</span>
 					</div>
 				</div>
 				<div class="form-group row">
-					<label class="col-sm-4 col-form-label bg-warning">Клиент:<span class="text-danger">*</span></label>
+					<label class="col-sm-4 col-form-label bg-warning">Брокер:<span class="text-danger">*</span></label>
 					<div class="col-sm-8">
 						<select class="form-control">
 							<option>(не выбрано)</option>
-							<option>AKUMSHIN SAVDO</option>
-							<option>ООО "DAVRON BOBO"</option>
-							<option>ООО "PLASTEKS"</option>
+							<option>bk123 - AKUMSHIN SAVDO</option>
+							<option>bk444 - "DAVRON BOBO"</option>
+							<option>bk321 - "PLASTEKS"</option>
 						</select>
 					</div>
 				</div>
 				<div class="form-group row">
-					<label class="col-sm-4 col-form-label bg-warning">Договор поручениe:<span class="text-danger">*</span></label>
+					<label class="col-sm-4 col-form-label bg-warning">Кол-во лотов:<span class="text-danger">*</span></label>
 					<div class="col-8">
-						<select class="form-control">
-							<option>(не выбрано)</option>
-							<option>Договор поручениe от 12.12.2020</option>
-							<option>Договор поручениe от 12.04.2020</option>
-							<option>Договор поручениe от 12.01.2020</option>
-						</select>
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm-4 col-form-label bg-warning">Мин. цена:<span class="text-danger">*</span></label>
+					<div class="col-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm-4 col-form-label bg-warning">Макс. цена:<span class="text-danger">*</span></label>
+					<div class="col-8">
+						<input type="text" class="form-control">
 					</div>
 				</div>
 				
 				<div class="form-group row">
 					<button class="col-sm-4 btn btn-outline-primary" data-toggle="modal" data-target="#calculator">Калькулятор расходов</button>
 				</div>
-				<center><button class="btn btn-primary btn-block" id="kt_btn_1">отправить заявку</button></center>
+				<center><a href="/sebt/pages/buyList.php" class="btn btn-primary btn-block">отправить заявку</a></center>
 			</div>
 		</div>
 	</div>

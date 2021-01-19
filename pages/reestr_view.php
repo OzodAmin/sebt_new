@@ -100,7 +100,7 @@ require_once '../sidebar.php';
 				<div class="card-header">
 					<h3 class="card-title">Начисления по контракту</h3>
 					<div class="card-toolbar">
-						<button type="button" data-toggle="modal" data-target="#childList" class="btn btn-outline-info btn-xs"><i class="ki ki-plus icon-xs"></i>выписать счет</button>
+						<button type="button" class="btn btn-outline-info btn-xs" id="vivod">Вывод средств</button>
 					</div>
 				</div>
 				<div class="card-body">
@@ -108,13 +108,20 @@ require_once '../sidebar.php';
 						<thead>
 							<tr>
 								<th>№</th>
-								<th nowrap>Дата</th>
+								<th>Дата</th>
 								<th>Оплачено</th>
 								<th>%</th>
 								<th></th>
 							</tr>
 						</thead>
 						<tbody>
+							<tr>
+								<th>1</th>
+								<td>12.12.2020</td>
+								<td>52 500,00</td>
+								<td>10%</td>
+								<td></td>
+							</tr>
 							<tr>
 								<th>1</th>
 								<td>12.12.2020</td>
@@ -136,71 +143,48 @@ require_once '../sidebar.php';
 		</div>
 	</div>
 </div>
+<?php 
+	$script = '
+<script>
+var btn = KTUtil.getById("vivod");
 
-<div class="modal" id="childList" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-	<div class="modal-dialog modal-lg">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title">Ввод нового счета на оплату</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<i aria-hidden="true" class="ki ki-close"></i>
-				</button>
-			</div>
-			<div class="modal-body">
-				<div class="form-group row">
-			        <label  class="col-3 col-form-label bg-warning">Плательщик:</label>
-					<div class="col-9">
-						<select class="form-control">
-							<option> - выберите - </option>
-							<option>MChJ "YOG`-MOY SAVDO" (продавец)</option>
-							<option>OOO "PRESTIJ RILT" (покупатель)</option>
-						</select>
-					</div>
-				</div>
-			    <div class="form-group row">
-			        <label class="col-sm-3 col-form-label bg-warning">Выбор счета:</label>
-			        <div class="col-sm-9">
-			        	<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio" checked>
-							<label class="form-check-label">АКБ InFinBank, р/с: 20208000400178912001</label>
-						</div>
-						<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio">
-							<label class="form-check-label">АКБ InFinBank, р/с: 20208000200178912027</label>
-						</div>
-			        </div>
-			    </div>
-			    <div class="form-group row">
-			        <label class="col-sm-3 col-form-label bg-warning">Оплата за:</label>
-			        <div class="col-sm-9">
-			        	<select class="form-control">
-							<option> - выберите - </option>
-							<option>Товары</option>
-							<option>Биржевой сбор РКП</option>
-							<option>Биржевой сбор</option>
-							<option>Штраф</option>
-							<option>Прочее</option>
-						</select>
-			        </div>
-			    </div>
-			    <div class="form-group row">
-			        <label class="col-sm-3 col-form-label bg-warning">Срок оплаты:</label>
-			        <div class="col-sm-9">
-			        	<div class="input-group">
-							<input type="text" class="form-control" value="5" />
-							<div class="input-group-append"><span class="input-group-text">дней</span></div>
-						</div>
-			        	<span class="form-text text-muted">Автоматом берется с контракта</span>
-			        </div>
-			    </div>
-
-				
-				<center>
-					<button type="button" class="btn btn-secondary text-center" data-dismiss="modal">Закрыть</button>
-					<a href="/sebt/pages/bill_view.php" class="btn btn-primary text-center">сохранить счет</a>
-				</center>
-			</div>
-		</div>
-	</div>
-</div>
-<?php require_once '../footer.php'; ?>
+KTUtil.addEvent(btn, "click", function() {
+   Swal.fire({
+				text: "Вы действительно хотите вывести выбранные средства?",
+				icon: "success",
+				showCancelButton: true,
+				buttonsStyling: false,
+				confirmButtonText: "Да, вывести!",
+				cancelButtonText: "Нет, отменить.",
+				customClass: {
+					confirmButton: "btn font-weight-bold btn-primary",
+					cancelButton: "btn font-weight-bold btn-default"
+				}
+			}).then(function (result) {
+				if (result.value) {
+					Swal.fire({
+						text: "Выделенные средства выведкны.",
+						icon: "success",
+						buttonsStyling: false,
+						confirmButtonText: "Ok, got it!",
+						customClass: {
+							confirmButton: "btn font-weight-bold btn-primary",
+						}
+					});
+				} else if (result.dismiss === "cancel") {
+					Swal.fire({
+						text: "Операция отменена",
+						icon: "error",
+						buttonsStyling: false,
+						confirmButtonText: "Ok, got it!",
+						customClass: {
+							confirmButton: "btn font-weight-bold btn-primary",
+						}
+					});
+				}
+			});
+});
+</script>	
+';
+	require_once '../footer.php'; 
+?>
