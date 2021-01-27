@@ -91,7 +91,7 @@ unset($URL);
 											<i class="menu-bullet menu-bullet-dot">
 												<span></span>
 											</i>
-											<span class="menu-text">Регистрация РКП</span>
+											<span class="menu-text">Регистрация клиент</span>
 										</a>
 									</li>
 								</ul>
@@ -162,7 +162,7 @@ unset($URL);
 							</div>
 						</li>
 
-						<?php $active = (in_array($page, ['firms.php', 'offer_comfirm.php', 'ticket_list.php', 'products.php', 'admin_bill_list.php', 'bk_confirm.php']) ? "menu-item-open menu-item-here" : "");?>
+						<?php $active = (in_array($page, ['moderator_bk_list.php', 'moderator_client_list.php', 'offer_comfirm.php', 'ticket_list.php', 'products.php', 'admin_bill_list.php', 'bk_confirm.php']) ? "menu-item-open menu-item-here" : "");?>
 						 
 						<li class="menu-item menu-item-submenu <?=$active;?>" aria-haspopup="true" data-menu-toggle="hover">
 							<a href="javascript:;" class="menu-link menu-toggle">
@@ -172,6 +172,26 @@ unset($URL);
 							</a>
 							<div class="menu-submenu"><i class="menu-arrow"></i>
 								<ul class="menu-subnav">
+
+									<?php $active = ($page == "moderator_bk_list.php" ? "menu-item-active" : "");?>
+									<li class="menu-item <?=$active;?>" aria-haspopup="true">
+										<a href="/sebt/pages/moderator_bk_list.php" class="menu-link">
+											<i class="menu-bullet menu-bullet-dot">
+												<span></span>
+											</i>
+											<span class="menu-text">Члены биржи</span>
+										</a>
+									</li>
+
+									<?php $active = ($page == "moderator_client_list.php" ? "menu-item-active" : "");?>
+									<li class="menu-item <?=$active;?>" aria-haspopup="true">
+										<a href="/sebt/pages/moderator_client_list.php" class="menu-link">
+											<i class="menu-bullet menu-bullet-dot">
+												<span></span>
+											</i>
+											<span class="menu-text">Клиенты</span>
+										</a>
+									</li>
 
 									<?php $active = ($page == "bk_confirm.php" ? "menu-item-active" : "");?>
 									<li class="menu-item <?=$active;?>" aria-haspopup="true">
@@ -183,15 +203,7 @@ unset($URL);
 										</a>
 									</li>									
 
-									<?php $active = ($page == "firms.php" ? "menu-item-active" : "");?>
-									<li class="menu-item <?=$active;?>" aria-haspopup="true">
-										<a href="/sebt/pages/firms.php" class="menu-link">
-											<i class="menu-bullet menu-bullet-dot">
-												<span></span>
-											</i>
-											<span class="menu-text">Члены биржи</span>
-										</a>
-									</li>									
+																		
 
 									<?php $active = ($page == "offer_comfirm.php" ? "menu-item-active" : "");?>
 									<li class="menu-item <?=$active;?>" aria-haspopup="true">
@@ -310,7 +322,7 @@ unset($URL);
 							</div>
 						</li>
 
-						<?php $active = (in_array($page, ['bill_list.php', 'bill_pay_list.php', 'reestr.php', 'own_brokers.php', 'assignment.php', 'offers.php', 'buliten.php', 'buyList.php']) ? "menu-item-open menu-item-here" : "");?>
+						<?php $active = (in_array($page, ['bill_list.php', 'bill_pay_list.php', 'reestr.php', 'client_brokers.php', 'client_assignment.php', 'offers.php', 'buliten.php', 'buyList.php']) ? "menu-item-open menu-item-here" : "");?>
 						 
 						<li class="menu-item menu-item-submenu <?=$active;?>" aria-haspopup="true" data-menu-toggle="hover">
 							<a href="javascript:;" class="menu-link menu-toggle">
@@ -320,6 +332,26 @@ unset($URL);
 							</a>
 							<div class="menu-submenu"><i class="menu-arrow"></i>
 								<ul class="menu-subnav">
+
+									<?php $active = ($page == "client_brokers.php" ? "menu-item-active" : "");?>
+									<li class="menu-item <?=$active;?>" aria-haspopup="true">
+										<a href="/sebt/pages/client_brokers.php" class="menu-link">
+											<i class="menu-bullet menu-bullet-dot">
+												<span></span>
+											</i>
+											<span class="menu-text">Брокеры</span>
+										</a>
+									</li>
+
+									<?php $active = ($page == "client_assignment.php" ? "menu-item-active" : "");?>
+									<li class="menu-item <?=$active;?>" aria-haspopup="true">
+										<a href="/sebt/pages/client_assignment.php" class="menu-link">
+											<i class="menu-bullet menu-bullet-dot">
+												<span></span>
+											</i>
+											<span class="menu-text">Поручениe на продажу</span>
+										</a>
+									</li>
 
 									<?php $active = ($page == "bill_list.php" ? "menu-item-active" : "");?>
 									<li class="menu-item <?=$active;?>" aria-haspopup="true">
@@ -351,25 +383,9 @@ unset($URL);
 										</a>
 									</li>
 
-									<?php $active = ($page == "own_brokers.php" ? "menu-item-active" : "");?>
-									<li class="menu-item <?=$active;?>" aria-haspopup="true">
-										<a href="/sebt/pages/own_brokers.php" class="menu-link">
-											<i class="menu-bullet menu-bullet-dot">
-												<span></span>
-											</i>
-											<span class="menu-text">Брокеры</span>
-										</a>
-									</li>
+									
 
-									<?php $active = ($page == "assignment.php" ? "menu-item-active" : "");?>
-									<li class="menu-item <?=$active;?>" aria-haspopup="true">
-										<a href="/sebt/pages/assignment.php" class="menu-link">
-											<i class="menu-bullet menu-bullet-dot">
-												<span></span>
-											</i>
-											<span class="menu-text">Договор поручениe на продажу</span>
-										</a>
-									</li>
+									
 
 									<?php $active = ($page == "offers.php" ? "menu-item-active" : "");?>
 									<li class="menu-item <?=$active;?>" aria-haspopup="true">

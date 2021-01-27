@@ -33,8 +33,8 @@ require_once '../sidebar.php';
 					</div>
 				</form>
 				<div class="mt-10">
-					<p><a href="/sebt/pages/register.php" class="text-white opacity-30 font-weight-normal"><?=$lang['11'];?></a></p>					
-					<p><a href="/sebt/pages/registerRKP.php" class="text-white opacity-30 font-weight-normal"><?=$lang['7'];?></a></p>					
+					<p><a href="/sebt/pages/register.php" class="text-white opacity-30 font-weight-normal">Регистрация член биржи</a></p>					
+					<p><a href="/sebt/pages/registerRKP.php" class="text-white opacity-30 font-weight-normal">Регистрация клиент</a></p>					
 				</div>
 			</div>
 			<!--end::Login Sign in form-->

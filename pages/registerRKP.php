@@ -86,7 +86,7 @@ require_once '../sidebar.php';
 								</div>
 								<!--end::Nav-->
 								<!--begin::Form-->
-								<form class="px-10" novalidate="novalidate" id="kt_form" action="/sebt/pages/firms.php">
+								<form class="px-10" novalidate="novalidate" id="kt_form" action="/sebt/pages/moderator_client_list.php" method="post">
 									<!--begin: Wizard Step 1-->
 									<div class="pb-5" data-wizard-type="step-content" data-wizard-state="current">
 										<!--begin::Title-->
@@ -146,109 +146,137 @@ require_once '../sidebar.php';
 	</div>
 
 										<!--begin::Row-->
-										<div class="row mb-5">
-											<div class="col-xl-4">
+										<div class="form-group row">
+											<label  class="col-4 col-form-label">Наименование организации</label>
+											<div class="col-8">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<select class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6">
+															<option>ООО</option>
+															<option>СП</option>
+															<option>БК</option>
+															<option>ОАО</option>
+															<option>ДП</option>
+															<option>ФХ</option>
+														</select>
+													</div>
+													<input type="text" class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="Наименование организации"/>
+												</div>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label  class="col-4 col-form-label">ИНН</label>
+											<div class="col-8">
 												<input type="text" class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="ИНН"/>
 											</div>
-											<div class="col-xl-4">
+										</div>
+										<div class="form-group row">
+											<label  class="col-4 col-form-label">ОКЭД</label>
+											<div class="col-8">
 												<input type="text" class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="ОКЭД"/>
 											</div>
-											<div class="col-xl-4">
+										</div>
+										<div class="form-group row">
+											<label  class="col-4 col-form-label">ИНПО</label>
+											<div class="col-8">
 												<input type="text" class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="ИНПО"/>
 											</div>
 										</div>
-										<!--end::Row-->
-										<!--begin::Row-->
-										<div class="row mb-5">
-											<div class="col-xl-4">
+										<div class="form-group row">
+											<label  class="col-4 col-form-label">Страна</label>
+											<div class="col-8">
 												<select class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6">
-													<option>ООО</option>
-													<option>СП</option>
-													<option>БК</option>
-													<option>ОАО</option>
-													<option>ДП</option>
-													<option>ФХ</option>
-												</select>
-											</div>
-											<div class="col-xl-8">
-												<input type="text" class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="Наименование организации"/>
-											</div>
-										</div>
-										<!--end::Row-->
-										<div class="form-group mb-5">
-											<input type="text" class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="ФИО руководителя"/>
-										</div>
-										<div class="form-group mb-5">
-											<input type="text" class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="Должность руководителя"/>
-										</div>
-										<div class="form-group mb-5">
-											<input type="text" class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="Действующий на основании"/>
-										</div>
-
-										<div class="row mb-5">
-											<div class="col-xl-4">
-												<select class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6">
-													<option>Страна</option>
 													<option>Uzbekistan</option>
 													<option>Russia</option>
 													<option>Kazakhstan</option>
 												</select>
 											</div>
-											<div class="col-xl-4">
+										</div>
+										<div class="form-group row">
+											<label  class="col-4 col-form-label">Регион</label>
+											<div class="col-8">
 												<select class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6">
-													<option>Область</option>
 													<option>Tashkent</option>
 													<option>Bukhara</option>
 													<option>Samarand</option>
 												</select>
 											</div>
-											<div class="col-xl-4">
+										</div>
+										<div class="form-group row">
+											<label  class="col-4 col-form-label">Город</label>
+											<div class="col-8">
 												<select class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6">
-													<option>Город</option>
 													<option>Tashkent city</option>
-													<option>Buxoro</option>
-													<option>Samarqand</option>
+													<option>Qibray</option>
+													<option>G'azalkent</option>
 												</select>
 											</div>
 										</div>
-
-										<div class="form-group mb-5">
-											<input type="text" class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="Юридический адрес"/>
-										</div>
-										<div class="form-group mb-5">
-											<input type='text' class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" id="kt_inputmask_3" placeholder="Мобильный телефон"/>
-										</div>
-										<div class="form-group mb-5">
-											<input type='text' class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" id="kt_inputmask_4" placeholder="Рабочий телефон"/>
-										</div>
-
-										<div class="row mb-5">
-											<div class="col-xl-6">
-												<div class="form-group mb-5">
-													<input type='text' class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" id="kt_inputmask_9" placeholder="Емайл"/>
-												</div>
-											</div>
-											<div class="col-xl-6">
-												<div class="form-group mb-5">
-													<input type='text' class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="Вебсайт"/>
-												</div>
+										<div class="form-group row">
+											<label  class="col-4 col-form-label">Юридический адрес</label>
+											<div class="col-8">
+												<input type="text" class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="Юридический адрес"/>
 											</div>
 										</div>
-
-										<div class="form-group mb-5">
-											<input type='text' class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" id="kt_inputmask_4" placeholder="Наименование банка"/>
-										</div>
-
-										<div class="row mb-5">
-											<div class="col-xl-6">
-												<div class="form-group mb-5">
-													<input type='text' class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="МФО"/>
-												</div>
+										
+										<div class="form-group row">
+											<label  class="col-4 col-form-label">ФИО руководителя</label>
+											<div class="col-8">
+												<input type="text" class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="ФИО руководителя"/>
 											</div>
-											<div class="col-xl-6">
-												<div class="form-group mb-5">
-													<input type='text' class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="Расчетный счет"/>
-												</div>
+										</div>
+										<div class="form-group row">
+											<label  class="col-4 col-form-label">Должность руководителя</label>
+											<div class="col-8">
+												<input type="text" class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="Должность руководителя"/>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label  class="col-4 col-form-label">Действующий на основании</label>
+											<div class="col-8">
+												<input type="text" class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="Действующий на основании"/>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label  class="col-4 col-form-label">Рабочий телефон</label>
+											<div class="col-8">
+												<input type='text' class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="Рабочий телефон"/>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label  class="col-4 col-form-label">Мобильный телефон</label>
+											<div class="col-8">
+												<input type='text' class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="Мобильный телефон"/>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label  class="col-4 col-form-label">Емайл</label>
+											<div class="col-8">
+												<input type='text' class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="Емайл"/>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label  class="col-4 col-form-label">Вебсайт</label>
+											<div class="col-8">
+												<input type='text' class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="Вебсайт"/>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label  class="col-4 col-form-label">Наименование банка</label>
+											<div class="col-8">
+												<input type='text' class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="Наименование банка"/>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label  class="col-4 col-form-label">МФО</label>
+											<div class="col-8">
+												<input type='text' class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="МФО"/>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label  class="col-4 col-form-label">Расчетный счет</label>
+											<div class="col-8">
+												<input type='text' class="form-control form-control-solid h-auto p-5 border-0 rounded-lg font-size-h6" placeholder="Расчетный счет"/>
 											</div>
 										</div>
 

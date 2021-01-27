@@ -161,11 +161,11 @@ require_once '../sidebar.php';
 									<label class="col-sm-4 col-form-label bg-warning">Указание по цене:</label>
 									<div class="col-sm-8">нет ограничений по допустимой цене покупки</div>
 								</div>
-								<div class="form-group row">
+								<!-- <div class="form-group row">
 									<label class="col-sm-4 col-form-label bg-warning">Указание по сумме:</label>
 									<div class="col-sm-8">нет ограничений по максимальной сумме покупки</div>
 								</div>
-
+ -->
 								<div class="form-group row">
 									<label class="col-sm-4 col-form-label bg-warning">Цена:<span class="text-danger">*</span></label>
 									<div class="col-sm-8">

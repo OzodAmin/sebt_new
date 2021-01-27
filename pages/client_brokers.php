@@ -73,9 +73,13 @@ require_once '../sidebar.php';
 			<form class="form">
 				<div class="modal-body">
 					<div class="form-group row">
-						<label class="col-form-label text-right col-lg-3 col-sm-12">№ брокера<span class="text-danger">*</span></label>
+						<label class="col-form-label text-right col-lg-3 col-sm-12">Брокер<span class="text-danger">*</span></label>
 						<div class="col-lg-9 col-md-9 col-sm-12">
-							<input type="text" class="form-control">
+							<select class="form-control">
+								<option>БК-123 MCHJ "oltin savdo"</option>
+								<option>БК-11 MCHJ "changalidan uzadiganlar"</option>
+								<option>БК-461 MCHJ "brokeri zo'ri"</option>
+							</select>
 						</div>
 					</div>
 					<div class="form-group row">
